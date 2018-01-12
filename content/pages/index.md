@@ -1,4 +1,4 @@
-Title: Hello, my name is Andrey.<br/>And I am a Developer living in Moscow, RU.
+Title: Hello, my name is Andrey<br/>And I am a Developer living in Moscow, RU
 Save_as: index.html
 Date: 2018-01-12 12:35
 Template: home
