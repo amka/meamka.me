@@ -1,0 +1,84 @@
+/* BASE STYLES */
+* {
+    font-family: "EB Garamond", Georgia, serif;
+}
+
+html {
+    /* font-size: 62.5%; */
+    font-family: "EB Garamond", Georgia, serif;
+    /* color: #494C4E; */
+    -webkit-font-smoothing: antialiased;
+    background: #2d71bd;
+    min-width: 260px;
+}
+
+body {
+    background: #ffffff;
+    border-color: #2d71bd;
+    border-style: solid; 
+    border-width: 0.5rem;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+    background-color: #F0EEEE;
+}
+
+/* HEADER */
+.navbar  {
+    height: 48px;
+}
+
+.navbar-brand {
+    height: 48px;
+    line-height: 48px;
+}
+
+/* CONTENT */
+.inner-container,
+.outer-container {
+    /* padding-left: 2rem; */
+    /* padding-right: 2rem; */
+}
+
+.inner-container {
+    max-width: 80em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.outer-container{
+    /* max-width: 1280px; */
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+}
+
+.outer-container.mask {
+    height: 300px;
+    overflow: hidden;
+}
+
+.outer-container img {
+    margin-top: calc(-50% + 300px);
+}
+
+.hero {
+    background-image: url(/images/valley.jpg);
+    background-position-x: 50%;
+    background-position-y: 40%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    min-height: 300px;
+    margin-bottom: 4rem;
+
+    align-items: flex-end;
+    display: flex;
+}
+
+.hero .inner-container {
+    color: #F0EEEE;
+}
