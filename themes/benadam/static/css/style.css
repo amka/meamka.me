@@ -14,10 +14,21 @@ html {
 }
 
 body {
-    background: #ffffff;
+    background: #2d71bd;
     border-color: #2d71bd;
     border-style: solid;
     border-width: 0.5rem;
+}
+
+@media (max-width:480px) {
+    body {
+        border-width: 0.2rem;
+    }
+
+    footer {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
 }
 
 img {
@@ -102,7 +113,9 @@ p {
 
 /* CONTENT */
 .container {
-    padding-bottom: 2rem; 
+    border-radius: 4px;
+    background: #ffffff;
+    padding-bottom: 2rem;
 }
 
 .inner-container,
