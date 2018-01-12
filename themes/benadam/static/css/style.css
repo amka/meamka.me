@@ -1,4 +1,5 @@
 /* BASE STYLES */
+
 * {
     font-family: "EB Garamond", Georgia, serif;
 }
@@ -15,7 +16,7 @@ html {
 body {
     background: #ffffff;
     border-color: #2d71bd;
-    border-style: solid; 
+    border-style: solid;
     border-width: 0.5rem;
 }
 
@@ -27,17 +28,72 @@ img {
     background-color: #F0EEEE;
 }
 
+
 /* HEADER */
-.navbar  {
+
+.navbar {
     height: 48px;
 }
 
 .navbar-brand {
-    height: 48px;
-    line-height: 48px;
+    /* border: 2px solid #eef6ff; */
+    width: 36px;
+    height: 36px;
+    text-align: center;
+
+    overflow: hidden;
 }
 
+.navbar-brand:hover {
+    /* border-color: #b6d8ff; */
+}
+
+#brand-in, #brand-out {
+    color: #2d71bd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 36px;
+    width: 36px;
+    transition: all cubic-bezier(0.445, 0.05, 0.55, 0.95) 150ms;
+}
+
+#brand-in {
+    transform: rotateY(90deg) translateY(-36px);
+}
+#brand-out {
+    /* transform: translateY(-48px); */
+    transform: rotateY(0deg) translateY(-36px);
+}
+
+#brand-in svg {
+    height: 32px;
+    width: 32px;
+}
+
+.brand-image {
+    fill: #2d71bd;
+}
+
+.navbar-brand:hover #brand-in {
+    /* transform: translateY(0px); */
+    transform: rotateY(0deg) translateY(0px);  
+}
+
+.navbar-brand:hover #brand-out {
+    /* transform: translateY(48px); */
+    transform: rotateY(90deg) translateY(0px);
+}
+
+.navbar-brand span,
+.navbar .btn {
+    color: #2d71bd;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
 /* CONTENT */
+
 .inner-container,
 .outer-container {
     /* padding-left: 2rem; */
@@ -50,31 +106,21 @@ img {
     margin-right: auto;
 }
 
-.outer-container{
+.outer-container {
     /* max-width: 1280px; */
     /* margin-left: auto; */
     /* margin-right: auto; */
 }
 
-.outer-container.mask {
-    height: 300px;
-    overflow: hidden;
-}
-
-.outer-container img {
-    margin-top: calc(-50% + 300px);
-}
-
 .hero {
-    background-image: url(/images/valley.jpg);
+    background-image: url(/images/me.jpg);
     background-position-x: 50%;
-    background-position-y: 40%;
+    background-position-y: 5%;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    min-height: 300px;
+    min-height: 450px;
     margin-bottom: 4rem;
-
     align-items: flex-end;
     display: flex;
 }
