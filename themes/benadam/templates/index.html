@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="columns">
+    <section id="content" class="column">
+        {% block content_title %}
+        <h2>{{content_title}}</h2>
+        {% endblock %}
+
+        {{content}}
+
+        {{page_name}}
+    </section>
+</div>
+
+<!-- /#content -->
+{% endblock content %}
